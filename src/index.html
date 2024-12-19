@@ -1,40 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mom website</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body class="mx-auto h-screen flex flex-col">
-    <header class="sticky top-0 z-50 bg-teal-700 py-6 backdrop-blur-sm ">
-        <nav class="flex flex-row justify-end max-w-screen-xl">
-            <div>
-                <a href="">
-                    <img src="" alt="">
-                </a>
-            </div>
-            <ul class="flex flex-row gap-8 mr-3 ">
-                <li class="hover:text-red-600"><a href="#">Home</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Properties</a></li>
-                <li><a href="#">Founder</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="mx-auto flex min-h-screen flex-col bg-slate-50 font-sans">
+    <header class="sticky top-0 z-50 w-full bg-teal-700">
+      <section class="mx-auto flex max-w-6xl items-center justify-between p-8">
+        <h1 class="text-3xl font-medium">Linda Home</h1>
+        <div>
+          <button
+            id="mobileButton"
+            class="text-3xl focus:outline-none md:hidden"
+          >
+            &#9776;
+          </button>
+        </div>
+        <ul class="hidden md:space-x-4 text-xl mx-0 mr-3 md:flex flex-row gap-8">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Properties</a></li>
+          <li><a href="#">Founder</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
     </header>
 
     <section class="mb-auto">
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero reprehenderit numquam deserunt laboriosam qui temporibus officiis esse. Omnis voluptate maxime asperiores nostrum nihil eum deleniti soluta similique odio odit?</span>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        libero reprehenderit numquam deserunt laboriosam qui temporibus officiis
+        esse. Omnis voluptate maxime asperiores nostrum nihil eum deleniti
+        soluta similique odio odit?
+      </span>
     </section>
 
-    <footer class="flex flex-col items-center justify-center bg-green-300 min-h-20 mt-auto">
-        <div class="w-full mx-auto max-w-screen-xl p-4">
-            <section class="mt-8 sm:mt-0">
-                <p>&#169; 2024 maximaproperties</p>
-            </section>
-        </div>
+    <footer
+      class="mt-auto flex min-h-20 w-full flex-col items-center justify-center bg-green-300"
+    >
+      <div class="mx-auto w-full max-w-screen-xl p-4">
+        <section class="mt-8 sm:mt-0">
+          <p>&#169; 2024 maximaproperties</p>
+        </section>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
