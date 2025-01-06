@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mom website</title>
     <link rel="stylesheet" href="output.css" />
+    <script src="/scripts/main.js" defer></script>
   </head>
-  <body class="mx-auto flex min-h-screen flex-col bg-slate-50 font-sans">
-    <header class="sticky top-0 z-50 w-full bg-teal-700">
-      <section class="mx-auto flex max-w-6xl items-center justify-between p-8">
+
+  <body
+    class="mx-auto flex min-h-screen min-w-max flex-col overflow-hidden bg-slate-50 font-sans"
+  >
+    <header class="sticky top-0 z-50 flex w-full bg-[#F0F5F9]">
+      <section
+        class="mx-auto flex max-w-6xl items-center justify-between gap-8 p-8"
+      >
         <h1 class="text-3xl font-medium">Linda Home</h1>
         <div>
           <button
@@ -18,7 +24,9 @@
             &#9776;
           </button>
         </div>
-        <ul class="hidden md:space-x-4 text-xl mx-0 mr-3 md:flex flex-row gap-8">
+        <ul
+          class="mx-0 mr-3 hidden flex-row gap-8 text-xl md:flex md:space-x-4"
+        >
           <li><a href="#">Home</a></li>
           <li><a href="#">Company</a></li>
           <li><a href="#">Properties</a></li>
@@ -30,16 +38,40 @@
     </header>
 
     <section class="mb-auto">
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-        libero reprehenderit numquam deserunt laboriosam qui temporibus officiis
-        esse. Omnis voluptate maxime asperiores nostrum nihil eum deleniti
-        soluta similique odio odit?
-      </span>
+      <div class="relative m-auto max-h-full max-w-full">
+        <div
+          id="carousel"
+          class="relative min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center transition-all duration-500 ease-in-out opacity-100"
+          style="
+            background-image: url(/img/gorgeous-sunset-and-view-of-hudson-river-from-hote-2024-11-27-14-25-13-utc.jpg);
+          "
+        >
+          <div
+            class="absolute top-0 p-1 text-sm text-[#f2f2f2]"
+            id="slide-number"
+          >
+            1 / 4
+          </div>
+          <div class="absolute bottom-4 left-4" id="caption">Caption Text</div>
+
+          <a
+            class="absolute left-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
+            onclick="plusSlides(-1)"
+          >
+            &#10094;
+          </a>
+          <a
+            class="absolute right-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
+            onclick="plusSlides(1)"
+          >
+            &#10095;
+          </a>
+        </div>
+        </div>
     </section>
 
     <footer
-      class="mt-auto flex min-h-20 w-full flex-col items-center justify-center bg-green-300"
+      class="mt-auto flex min-h-20 w-full flex-col items-center justify-center bg-[#D3D4DB]"
     >
       <div class="mx-auto w-full max-w-screen-xl p-4">
         <section class="mt-8 sm:mt-0">
