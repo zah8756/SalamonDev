@@ -9,72 +9,90 @@
   </head>
 
   <body
-    class="mx-auto flex min-h-screen min-w-max flex-col overflow-hidden bg-slate-50 font-sans"
+    class="mx-auto flex min-h-screen min-w-max flex-col overflow-hidden bg-[#F0F5F9] font-sans"
   >
-    <header class="sticky top-0 z-50 flex w-full bg-[#F0F5F9]">
-      <section
-        class="mx-auto flex max-w-6xl items-center justify-between gap-8 p-8"
-      >
-        <h1 class="text-3xl font-medium">Linda Home</h1>
-        <div>
-          <button
-            id="mobileButton"
-            class="text-3xl focus:outline-none md:hidden"
-          >
-            &#9776;
-          </button>
-        </div>
-        <ul
-          class="mx-0 mr-3 hidden flex-row gap-8 text-xl md:flex md:space-x-4"
-        >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Properties</a></li>
-          <li><a href="#">Founder</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </section>
+    <header
+      class="sticky top-0 z-50 mx-auto flex w-full max-w-7xl items-center justify-between bg-[#F0F5F9] p-8"
+    >
+      <img src="/img/SalamonDG.png" alt="company logo" class="h-12" />
+      <div>
+        <button id="mobileButton" class="text-3xl focus:outline-none md:hidden">
+          &#9776;
+        </button>
+      </div>
+      <ul class="mx-0 mr-3 hidden flex-row gap-8 text-xl md:flex md:space-x-4">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">Founder</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </header>
 
     <section class="mb-auto">
-      <div class="relative m-auto max-h-full max-w-full">
+      <div
+        id="mainCon"
+        class="relative m-auto max-h-[calc(100vh-96px-80px)] w-full overflow-hidden"
+      >
         <div
-          id="carousel"
-          class="relative min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center transition-all duration-500 ease-in-out opacity-100"
+          id="carousel_1"
           style="
             background-image: url(/img/gorgeous-sunset-and-view-of-hudson-river-from-hote-2024-11-27-14-25-13-utc.jpg);
           "
+          class="slide relative inset-0 min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-100 transition-opacity duration-500 ease-in-out"
+        ></div>
+        <div
+          id="carousel_2"
+          style="
+            background-image: url(/img/lower-manhattan-new-york-city-2023-11-27-05-19-28-utc.jpg);
+          "
+          class="slide relative inset-0 hidden min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-0 transition-opacity duration-500 ease-in-out"
+        ></div>
+        <div
+          id="carousel_3"
+          style="
+            background-image: url(/img/new-york-city-2023-11-27-04-57-40-utc.jpg);
+          "
+          class="slide relative inset-0 hidden min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-0 transition-opacity duration-500 ease-in-out"
+        ></div>
+        <div
+          id="carousel_4"
+          style="
+            background-image: url(/img/portland-maine-usa-skyline-2023-11-27-05-02-39-utc.jpg);
+          "
+          class="slide relative inset-0 hidden min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-0 transition-opacity duration-500 ease-in-out"
+        ></div>
+        <div
+          class="absolute top-0 p-1 text-sm text-[#f2f2f2]"
+          id="slide-number"
         >
-          <div
-            class="absolute top-0 p-1 text-sm text-[#f2f2f2]"
-            id="slide-number"
-          >
-            1 / 4
-          </div>
-          <div class="absolute bottom-4 left-4" id="caption">Caption Text</div>
+          1 / 4
+        </div>
 
-          <a
-            class="absolute left-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
-            onclick="plusSlides(-1)"
-          >
-            &#10094;
-          </a>
-          <a
-            class="absolute right-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
-            onclick="plusSlides(1)"
-          >
-            &#10095;
-          </a>
+        <div class="flex justify-center text-center" id="caption">
+          Caption Text
         </div>
-        </div>
+
+        <a
+          class="absolute left-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
+          onclick="plusSlides(-1)"
+        >
+          &#10094;
+        </a>
+        <a
+          class="absolute right-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
+          onclick="plusSlides(1)"
+        >
+          &#10095;
+        </a>
+      </div>
     </section>
 
     <footer
       class="mt-auto flex min-h-20 w-full flex-col items-center justify-center bg-[#D3D4DB]"
     >
-      <div class="mx-auto w-full max-w-screen-xl p-4">
-        <section class="mt-8 sm:mt-0">
+      <div class="mx-auto w-full max-w-7xl pb-4">
+        <section class="mt-0 pl-4 md:pl-0">
           <p>&#169; 2024 maximaproperties</p>
         </section>
       </div>

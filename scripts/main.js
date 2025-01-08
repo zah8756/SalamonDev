@@ -1,23 +1,16 @@
-let slideIndex = 1;
-
-// List of slides (image URLs, captions)
+let slideIndex = 1; // Initialize slideIndex
 const slides = [
   {
-    image:
-      "/img/gorgeous-sunset-and-view-of-hudson-river-from-hote-2024-11-27-14-25-13-utc.jpg",
-    caption: "Caption Text",
+    caption: `"Creating Spaces That Inspire" /br We shape innovative, lasting developments for a brighter future.`,
   },
   {
-    image: "/img/lower-manhattan-new-york-city-2023-11-27-05-19-28-utc.jpg",
-    caption: "Caption Two",
+    caption: `"Real Estate, Redefined" /br Expertly crafted residential, commercial, and mixed-use projects.`,
   },
   {
-    image: "/img/new-york-city-2023-11-27-04-57-40-utc.jpg",
-    caption: "Caption Three",
+    caption: `"Building for Connection" /br We design spaces that bring people and communities together.`,
   },
   {
-    image: "/img/portland-maine-usa-skyline-2023-11-27-05-02-39-utc.jpg",
-    caption: "Caption Four",
+    caption: `"Your Vision, Our Promise" /br Dedicated to delivering excellence, every step of the way.`,
   },
 ];
 
@@ -36,37 +29,50 @@ function plusSlides(n) {
 }
 
 function showSlide(index) {
-  const carousel = document.getElementById("carousel");
+  const slidesContainer = document.querySelectorAll(".slide");
   const slideNumber = document.getElementById("slide-number");
   const caption = document.getElementById("caption");
 
-  // Temporarily reduce opacity for transition
-  carousel.classList.add("opacity-0");
-  setTimeout(() => {
-    // Update the background image, slide number, and caption
-    carousel.style.backgroundImage = `url('${slides[index - 1].image}')`;
-    slideNumber.textContent = `${index} / ${slides.length}`;
-    caption.textContent = slides[index - 1].caption;
+  // Hide all slides
+  slidesContainer.forEach((slide) => {
+    slide.classList.remove("opacity-100");
+    slide.classList.add("opacity-0");
+    slide.classList.add("hidden");
+  });
 
-    //Restore opacity after updating
-    carousel.classList.remove("opacity-0");
-  }, 250); // Matches the duration-500 class
+  // Show the current slide
+  const currentSlide = slidesContainer[index - 1];
+  currentSlide.classList.remove("hidden");
+  setTimeout(() => {
+    currentSlide.classList.add("opacity-100");
+    currentSlide.classList.remove("opacity-0");
+  }, 50); // Ensure the transition starts
+
+  // Update slide number and caption
+  slideNumber.textContent = `${index} / ${slidesContainer.length}`;
+  
+  setTimeout(() =>{
+    caption.textContent = slides[index - 1].caption;
+  }, 500); // Wait for the slide transition to finish
+
+
+  // Update the global slide index
+  slideIndex = index;
 }
 
 function resetTimer() {
   clearTimeout(inactivityTimeout);
-  clearInterval(inactive);
+  clearInterval(inactive); // Clear any existing interval
   inactivityTimeout = setTimeout(() => {
-    // Perform the desired action here
     console.log("User is inactive");
     inactive = setInterval(() => plusSlides(1), 5000);
   }, 5000); // 5 seconds of inactivity
 }
 
+// Event listeners for resetting the inactivity timer
 document.addEventListener("mousemove", resetTimer);
 document.addEventListener("click", resetTimer);
 document.addEventListener("keypress", resetTimer);
 
 // Initial call to start the timer
-
 resetTimer();
