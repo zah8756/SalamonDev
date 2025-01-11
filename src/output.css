@@ -661,6 +661,20 @@ video {
   max-width: 80rem;
 }
 
+@keyframes fades {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fades {
+  animation: fades 1s ease-in-out;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -790,23 +804,27 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@keyframes fades {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.data-\[active\]\:animate-fades[data-active] {
+  animation: fades 1s ease-in-out;
+}
+
+.data-\[active\]\:opacity-100[data-active] {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {

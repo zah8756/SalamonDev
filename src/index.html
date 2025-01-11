@@ -32,36 +32,40 @@
     <section class="mb-auto">
       <div
         id="mainCon"
-        class="relative m-auto max-h-[calc(100vh-96px-80px)] w-full overflow-hidden"
+        class="relative m-auto min-h-[calc(100vh-96px-80px)] w-full overflow-hidden"
+        data-carousel
       >
-        <div
-          id="carousel_1"
-          style="
-            background-image: url(/img/gorgeous-sunset-and-view-of-hudson-river-from-hote-2024-11-27-14-25-13-utc.jpg);
-          "
-          class="slide relative inset-0 min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-100 transition-opacity duration-500 ease-in-out"
-        ></div>
-        <div
-          id="carousel_2"
-          style="
-            background-image: url(/img/lower-manhattan-new-york-city-2023-11-27-05-19-28-utc.jpg);
-          "
-          class="slide relative inset-0 hidden min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-0 transition-opacity duration-500 ease-in-out"
-        ></div>
-        <div
-          id="carousel_3"
-          style="
-            background-image: url(/img/new-york-city-2023-11-27-04-57-40-utc.jpg);
-          "
-          class="slide relative inset-0 hidden min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-0 transition-opacity duration-500 ease-in-out"
-        ></div>
-        <div
-          id="carousel_4"
-          style="
-            background-image: url(/img/portland-maine-usa-skyline-2023-11-27-05-02-39-utc.jpg);
-          "
-          class="slide relative inset-0 hidden min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-0 transition-opacity duration-500 ease-in-out"
-        ></div>
+        <div data-slides>
+          <div
+            id="carousel_1"
+            style="
+              background-image: url(/img/gorgeous-sunset-and-view-of-hudson-river-from-hote-2024-11-27-14-25-13-utc.jpg);
+            "
+            class="absolute inset-0 min-h-[calc(100vh-96px-80px)] w-full bg-cover bg-center opacity-0 data-[active]:animate-fades data-[active]:opacity-100"
+            data-active
+          ></div>
+          <div
+            id="carousel_2"
+            style="
+              background-image: url(/img/lower-manhattan-new-york-city-2023-11-27-05-19-28-utc.jpg);
+            "
+            class="absolute inset-0 min-h-[calc(100vh-96px-80px)] w-full  bg-cover bg-center opacity-0 data-[active]:opacity-100"
+          ></div>
+          <div
+            id="carousel_3"
+            style="
+              background-image: url(/img/new-york-city-2023-11-27-04-57-40-utc.jpg);
+            "
+            class="absolute inset-0 min-h-[calc(100vh-96px-80px)] w-full animate-fades bg-cover bg-center opacity-0 data-[active]:opacity-100"
+          ></div>
+          <div
+            id="carousel_4"
+            style="
+              background-image: url(/img/portland-maine-usa-skyline-2023-11-27-05-02-39-utc.jpg);
+            "
+            class="absolute inset-0  min-h-[calc(100vh-96px-80px)] w-full animate-fades bg-cover bg-center opacity-0 data-[active]:opacity-100"
+          ></div>
+        </div>
         <div
           class="absolute top-0 p-1 text-sm text-[#f2f2f2]"
           id="slide-number"
@@ -73,18 +77,18 @@
           Caption Text
         </div>
 
-        <a
+        <button
           class="absolute left-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
-          onclick="plusSlides(-1)"
+          data-carousel-button="prev"
         >
           &#10094;
-        </a>
-        <a
+        </button>
+        <button
           class="absolute right-4 top-2/4 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
-          onclick="plusSlides(1)"
+          data-carousel-button="next"
         >
           &#10095;
-        </a>
+        </button>
       </div>
     </section>
 
