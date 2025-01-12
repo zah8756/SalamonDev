@@ -590,6 +590,10 @@ video {
   z-index: 50;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -630,10 +634,6 @@ video {
 
 .h-12 {
   height: 3rem;
-}
-
-.max-h-\[calc\(100vh-96px-80px\)\] {
-  max-height: calc(100vh - 96px - 80px);
 }
 
 .min-h-20 {
@@ -792,10 +792,6 @@ video {
   opacity: 0;
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -804,9 +800,47 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-150 {
+  transition-delay: 150ms;
+}
+
+.delay-0 {
+  transition-delay: 0s;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.data-\[active\]\:-z-10[data-active] {
+  z-index: -10;
+}
+
+.data-\[active\]\:z-10[data-active] {
+  z-index: 10;
+}
+
+.data-\[active\]\:z-\[1\][data-active] {
+  z-index: 1;
+}
+
+.data-\[active\]\:z-\[2\][data-active] {
+  z-index: 2;
 }
 
 @keyframes fades {
@@ -825,6 +859,10 @@ video {
 
 .data-\[active\]\:opacity-100[data-active] {
   opacity: 1;
+}
+
+.data-\[active\]\:delay-0[data-active] {
+  transition-delay: 0s;
 }
 
 @media (min-width: 768px) {
