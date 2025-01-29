@@ -5,6 +5,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      colors:{
+        'background-light':'#F7F9FB',
+        'hover':'#C4DFF0',
+        'text-dark':'#1E1F24',
+        'borderG':'#B3B5C1',
+      },
+
       keyframes:{
         slideIn:{
           from:{
