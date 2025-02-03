@@ -9,17 +9,22 @@
   </head>
 
   <body
-    class="mx-auto flex min-h-screen min-w-max flex-col overflow-hidden bg-[#F0F5F9] font-sans"
+    class="mx-auto flex min-h-screen min-w-max flex-col overflow-hidden bg-background-light font-sans"
   >
     <header
-      class="sticky top-0 z-50 mx-auto flex w-full max-w-7xl items-center justify-between bg-[#F0F5F9] p-8"
+      class="sticky top-0 z-50 mx-auto flex w-full max-w-7xl items-center justify-between bg-background-light p-8 shadow-xl"
     >
       <img src="/img/SalamonDG.png" alt="company logo" class="h-12" />
-      <div>
-        <button id="mobileButton" class="text-3xl focus:outline-none md:hidden">
-          &#9776;
-        </button>
-      </div>
+
+      <button
+        id="hamburger-button"
+        class="relative h-8 w-8 cursor-pointer text-3xl focus:outline-none md:hidden"
+      >
+        <div
+          class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
+        ></div>
+      </button>
+
       <ul class="mx-0 mr-3 hidden flex-row gap-8 text-xl md:flex md:space-x-4">
         <li><a href="#">Home</a></li>
         <li><a href="#">Company</a></li>
@@ -27,6 +32,24 @@
         <li><a href="#">Founder</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+
+      <section
+        id="mobile-menu"
+        class="toggle-btn absolute left-0 top-[112px] mx-0 hidden w-full max-w-full flex-col justify-center bg-background-light text-3xl"
+      >
+        <nav
+          class="relative flex min-h-7 w-full flex-col py-5"
+          aria-label="mobile"
+        >
+          <ul class="flex flex-col justify-center gap-5 px-8 text-text-dark">
+            <li><a href="#" class="block hover:bg-hover">Home</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Founder</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
     <section class="mb-auto">
@@ -44,9 +67,9 @@
             class="group absolute inset-0 flex min-h-[calc(100vh-96px-80px)] w-full justify-center bg-cover bg-center opacity-0 transition delay-200 duration-200 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
             data-active
           >
-            <div class="flex w-full justify-center bg-black bg-opacity-15">
+            <div class="flex w-full justify-center bg-black bg-opacity-30">
               <div
-                class="z-10 flex max-w-[20rem] flex-col items-center justify-center text-2xl text-background-light group-data-[active]:animate-slideIn md:text-3xl md:max-w-[40rem]  "
+                class="z-10 flex max-w-[20rem] flex-col items-center justify-center text-2xl font-bold text-text-light [text-shadow:_2px_2px_0_rgb(0_0_0)] group-data-[active]:animate-slideIn md:max-w-[40rem] md:text-3xl"
                 id="caption"
               >
                 Keystone Equities is a real estate owner and operator focused on
@@ -115,13 +138,13 @@
         </div>
 
         <button
-          class="absolute left-4 top-2/4 z-10 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
+          class="absolute left-4 top-2/4 z-10 cursor-pointer select-none rounded-md p-3 text-3xl font-bold text-ButtonC ring-2 ring-ButtonC transition"
           data-carousel-button="prev"
         >
           &#10094;
         </button>
         <button
-          class="absolute right-4 top-2/4 z-10 cursor-pointer select-none rounded-md text-xl font-bold text-yellow-300 transition"
+          class="absolute right-4 top-2/4 z-10 cursor-pointer select-none rounded-md p-3 text-3xl font-bold text-ButtonC ring-2 ring-ButtonC transition"
           data-carousel-button="next"
         >
           &#10095;
@@ -130,7 +153,7 @@
     </section>
 
     <footer
-      class="mt-auto flex min-h-20 w-full flex-col items-center justify-center bg-[#D3D4DB]"
+      class="mt-auto flex min-h-20 w-full flex-col items-center justify-center bg-footerC"
     >
       <div class="mx-auto w-full max-w-7xl pb-4">
         <section class="mt-0 pl-4 md:pl-0">

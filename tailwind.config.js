@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'background-light':'#F7F9FB',
+        'background-light':'#f2f8fd',
         'hover':'#C4DFF0',
         'text-dark':'#1E1F24',
+        'text-light':'#c3e0f4',
         'borderG':'#B3B5C1',
+        'footerC':'#73bbe7',
+        'ButtonC':'#73BCE9'
       },
 
       keyframes:{
