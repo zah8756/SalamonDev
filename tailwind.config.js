@@ -5,6 +5,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily:{
+        serif: ['tinos-regular']
+      },
+
       colors:{
         'background-light':'#f2f8fd',
         'hover':'#C4DFF0',
