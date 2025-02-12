@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Founder</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header
+      class="sticky top-0 z-50 mx-auto w-full border-b-4 border-borderG bg-background-light font-serif shadow-lg"
+    >
+      <nav class="mx-auto flex max-w-6xl items-center justify-between p-4">
+        <img src="/img/SalamonDG.png" alt="company logo" class="h-12" />
+
+        <button
+          id="hamburger-button"
+          class="relative h-8 w-8 cursor-pointer text-3xl focus:outline-none md:hidden"
+        >
+          <div
+            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
+          ></div>
+        </button>
+
+        <ul class="mx-0 mr-3 hidden items-center gap-8 text-2xl md:flex">
+          <li class="block">
+            <a
+              class="rounded-md p-2 underline underline-offset-8 hover:bg-[#DBDCE1]"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="block">
+            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="#">Company</a>
+          </li>
+          <li class="block">
+            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="#">Properties</a>
+          </li>
+          <li class="block">
+            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="#">Founder</a>
+          </li>
+          <li class="block">
+            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section
+        id="mobile-menu"
+        class="toggle-btn absolute left-0 top-[83px] mx-0 hidden w-full max-w-full flex-col justify-center bg-background-light text-3xl"
+      >
+        <nav
+          class="relative flex min-h-7 w-full flex-col py-5"
+          aria-label="mobile"
+        >
+          <ul class="flex flex-col justify-center gap-5 px-8 text-text-dark">
+            <li><a href="index.html" class="block hover:bg-hover">Home</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Founder</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main
+      class="flex min-h-[calc(100vh-96px-52px)] justify-center bg-background-light"
+    >
+      <div class="flex max-w-[60rem] flex-col gap-6 p-10">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="post" class="flex flex-col gap-2">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+
+          <label for="email">Phone number</label>
+          <input type="tel" id="phone" name="phone" required />
+          <br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <br />
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      class="mt-auto flex min-h-16 w-full flex-col items-center justify-center bg-footerC"
+    >
+      <div class="mx-auto flex w-full max-w-6xl items-center">
+        <section class="mt-0 pl-4 md:pl-0">
+          <p>&#169; 2024 maximaproperties</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
