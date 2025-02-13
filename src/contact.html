@@ -15,7 +15,7 @@
   </head>
   <body>
     <header
-      class="sticky top-0 z-50 mx-auto w-full border-b-4 border-borderG bg-background-light font-serif shadow-lg"
+      class="sticky top-0 z-50 mx-auto w-full border-b-4 border-borderG bg-background-light font-serif shadow-md"
     >
       <nav class="mx-auto flex max-w-6xl items-center justify-between p-4">
         <img src="/img/SalamonDG.png" alt="company logo" class="h-12" />
@@ -74,26 +74,60 @@
     <main
       class="flex min-h-[calc(100vh-96px-52px)] justify-center bg-background-light"
     >
-      <div class="flex max-w-[60rem] flex-col gap-6 p-10">
+      <div class="flex min-w-[50rem] max-w-[60rem] flex-col gap-6 p-10">
         <h2>Contact Us</h2>
-        <form action="send_email.php" method="post" class="flex flex-col gap-2">
+        <form
+          action="send_email.php"
+          method="post"
+          class="flex flex-col gap-2 rounded-md border bg-gray-50 p-8"
+        >
           <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First and last name ..."
+            class="min-w-40 grow rounded-md border p-4 shadow-sm"
+            required
+          />
           <br />
 
           <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="min-w-[2rem] grow rounded-md border p-4 shadow-sm"
+            required
+          />
           <br />
 
           <label for="email">Phone number</label>
-          <input type="tel" id="phone" name="phone" required />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="min-w-40 grow rounded-md border p-4 shadow-sm"
+            required
+          />
           <br />
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            class="min-h-60 min-w-40 grow rounded-md border p-4 shadow-sm"
+            placeholder="write your message here ..."
+            required
+          ></textarea>
           <br />
 
-          <button type="submit">Send</button>
+          <button
+            type="submit"
+            class="min-h-4 w-36 rounded-md border-none bg-ButtonC p-2 text-lg font-medium text-white"
+          >
+            Send
+          </button>
         </form>
       </div>
     </main>
