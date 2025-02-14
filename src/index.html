@@ -15,7 +15,7 @@
   </head>
 
   <body
-    class="mx-auto flex min-h-screen min-w-max flex-col overflow-hidden bg-background-light"
+    class="mx-auto flex min-h-full min-w-max flex-col overflow-hidden bg-background-light"
   >
     <header
       class="sticky top-0 z-50 mx-auto w-full border-b-4 border-borderG bg-background-light font-serif shadow-md"
@@ -35,22 +35,38 @@
         <ul class="mx-0 mr-3 hidden items-center gap-8 text-2xl md:flex">
           <li class="block">
             <a
-              class="rounded-md p-2 underline underline-offset-8 hover:bg-[#DBDCE1]"
+              class="rounded-md p-2 underline underline-offset-8 transition duration-500 hover:bg-[#DBDCE1]"
               href="index.html"
               >Home</a
             >
           </li>
           <li class="block">
-            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="#">Company</a>
+            <a
+              class="rounded-md p-2 transition duration-500 hover:bg-[#DBDCE1]"
+              href="#"
+              >Company</a
+            >
           </li>
           <li class="block">
-            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="#">Properties</a>
+            <a
+              class="rounded-md p-2 transition duration-500 hover:bg-[#DBDCE1]"
+              href="#"
+              >Properties</a
+            >
           </li>
           <li class="block">
-            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="/src/founder.html">Founder</a>
+            <a
+              class="rounded-md p-2 transition duration-500 hover:bg-[#DBDCE1]"
+              href="./founder.html"
+              >Founder</a
+            >
           </li>
           <li class="block">
-            <a class="rounded-md p-2 hover:bg-[#DBDCE1]" href="#">Contact</a>
+            <a
+              class="rounded-md p-2 transition duration-500 hover:bg-[#DBDCE1]"
+              href="./contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -64,20 +80,44 @@
           aria-label="mobile"
         >
           <ul class="flex flex-col justify-center gap-5 px-8 text-text-dark">
-            <li><a href="index.html" class="block hover:bg-hover">Home</a></li>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="/src/founder.html">Founder</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="index.html" class="block rounded-md pl-2 hover:bg-hover"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="block rounded-md pl-2 hover:bg-hover" href="#"
+                >Company</a
+              >
+            </li>
+            <li>
+              <a class="block rounded-md pl-2 hover:bg-hover" href="#"
+                >Properties</a
+              >
+            </li>
+            <li>
+              <a
+                class="block rounded-md pl-2 hover:bg-hover"
+                href="/src/founder.html"
+                >Founder</a
+              >
+            </li>
+            <li>
+              <a
+                class="block rounded-md pl-2 hover:bg-hover"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
       </section>
     </header>
 
-    <section class="mb-auto">
+    <section class="mb-auto grow">
       <div
         id="mainCon"
-        class="relative m-auto min-h-[calc(100vh-96px-52px)] w-full overflow-hidden"
+        class="relative m-auto min-h-[calc(100vh-144px)] w-full overflow-hidden"
         data-carousel
       >
         <div data-slides>
@@ -86,7 +126,7 @@
             style="
               background-image: url(/img/gorgeous-sunset-and-view-of-hudson-river-from-hote-2024-11-27-14-25-13-utc.jpg);
             "
-            class="group absolute inset-0 flex min-h-[calc(100vh-96px-52px)] w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
+            class="group absolute inset-0 flex w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
             data-active
           >
             <div class="flex w-full justify-center bg-black bg-opacity-30">
@@ -106,7 +146,7 @@
             style="
               background-image: url(/img/lower-manhattan-new-york-city-2023-11-27-05-19-28-utc.jpg);
             "
-            class="group absolute inset-0 flex min-h-[calc(100vh-96px-52px)] w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
+            class="group absolute inset-0 flex w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
           >
             <div class="flex w-full justify-center bg-black bg-opacity-30">
               <div
@@ -125,7 +165,7 @@
             style="
               background-image: url(/img/new-york-city-2023-11-27-04-57-40-utc.jpg);
             "
-            class="group absolute inset-0 flex min-h-[calc(100vh-96px-52px)] w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
+            class="group absolute inset-0 flex w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
           >
             <div class="flex w-full justify-center bg-black bg-opacity-30">
               <div
@@ -144,7 +184,7 @@
             style="
               background-image: url(/img/portland-maine-usa-skyline-2023-11-27-05-02-39-utc.jpg);
             "
-            class="group absolute inset-0 flex min-h-[calc(100vh-96px-52px)] w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
+            class="group absolute inset-0 flex w-full justify-center bg-cover bg-center opacity-0 transition delay-300 duration-300 data-[active]:z-[2] data-[active]:opacity-100 data-[active]:delay-0"
           >
             <div class="flex w-full justify-center bg-black bg-opacity-35">
               <div
@@ -160,13 +200,13 @@
         </div>
 
         <button
-          class="absolute left-4 top-2/4 z-10 hidden cursor-pointer select-none rounded-xl p-3 text-3xl font-bold text-ButtonC ring-2 ring-[#70ABCF] transition duration-700 hover:bg-background-light hover:text-text-dark hover:ring-borderG sm:block"
+          class="absolute left-4 top-2/4 z-10 hidden cursor-pointer select-none rounded-xl p-3 text-3xl font-bold text-ButtonC ring-2 ring-[#70ABCF] transition duration-700 hover:bg-background-light hover:text-text-dark hover:ring-background-light sm:block"
           data-carousel-button="prev"
         >
           &#10094;
         </button>
         <button
-          class="absolute right-4 top-2/4 z-10 hidden cursor-pointer select-none rounded-xl p-3 text-3xl font-bold text-ButtonC ring-2 ring-ButtonC transition duration-700 hover:bg-background-light hover:text-text-dark hover:ring-borderG sm:block"
+          class="absolute right-4 top-2/4 z-10 hidden cursor-pointer select-none rounded-xl p-3 text-3xl font-bold text-ButtonC ring-2 ring-ButtonC transition duration-700 hover:bg-background-light hover:text-text-dark hover:ring-background-light sm:block"
           data-carousel-button="next"
         >
           &#10095;
