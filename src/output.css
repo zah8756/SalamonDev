@@ -729,8 +729,16 @@ video {
   max-width: 20rem;
 }
 
+.max-w-\[50rem\] {
+  max-width: 50rem;
+}
+
 .max-w-\[60rem\] {
   max-width: 60rem;
+}
+
+.max-w-\[70rem\] {
+  max-width: 70rem;
 }
 
 .max-w-full {
@@ -815,43 +823,14 @@ video {
   border-style: none;
 }
 
-.border-borderG {
-  --tw-border-opacity: 1;
-  border-color: rgb(179 181 193 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\] {
-  border-color: ;
-}
-
 .border-\[\#70ABCF\] {
   --tw-border-opacity: 1;
   border-color: rgb(112 171 207 / var(--tw-border-opacity, 1));
 }
 
-.border-\[\#439fd8\] {
+.border-borderG {
   --tw-border-opacity: 1;
-  border-color: rgb(67 159 216 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\#0c2331\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(12 35 49 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\#0c1820\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(12 24 32 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\#33698a\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(51 105 138 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\#528cb1\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(82 140 177 / var(--tw-border-opacity, 1));
+  border-color: rgb(179 181 193 / var(--tw-border-opacity, 1));
 }
 
 .bg-ButtonC {
@@ -933,8 +912,20 @@ video {
   padding-left: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.font-head {
+  font-family: Bodoni Moda, serif;
+}
+
 .font-serif {
-  font-family: tinos-regular;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-body {
+  font-family: Montserrat, serif;
 }
 
 .text-2xl {
@@ -947,9 +938,19 @@ video {
   line-height: 2.25rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -962,6 +963,22 @@ video {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-\[92px\] {
+  line-height: 92px;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-ButtonC {
