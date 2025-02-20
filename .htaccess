@@ -1,0 +1,7 @@
+# Set the default document to index.html in the src folder
+DirectoryIndex src/index.html
+
+# Redirect all requests to the src folder
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/src/
+RewriteRule ^(.*)$ /src/$1 [L]
