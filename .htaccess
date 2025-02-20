@@ -1,5 +1,5 @@
 # Set the default document to index.html in the src folder
-DirectoryIndex src/index.html
+DirectoryIndex ./src/index.html
 
 # Redirect all requests to the src folder
 RewriteEngine On
