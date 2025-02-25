@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/scripts/main.js" defer></script>
+  </head>
+
+  <body
+    class="mx-auto flex min-h-full min-w-max flex-col bg-background-light"
+  >
+    <header
+      class="sticky top-0 z-50 mx-auto w-full border-b-4 border-borderG bg-background-light font-body font-medium shadow-md"
+    >
+      <nav class="mx-auto flex max-w-6xl items-center justify-between p-4">
+        <img src="/img/SalamonDG.png" alt="company logo" class="h-12" />
+
+        <button
+          id="hamburger-button"
+          class="relative h-8 w-8 cursor-pointer text-3xl focus:outline-none md:hidden"
+        >
+          <div
+            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
+          ></div>
+        </button>
+
+        <ul
+          class="mx-0 hidden list-none flex-row content-center justify-center align-baseline text-2xl md:flex"
+        >
+          <li class="block align-baseline">
+            <a
+              class="rounded-md px-[20px] py-[26px] underline underline-offset-8 transition duration-500 hover:bg-[#DBDCE1]"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="block align-baseline"></li>
+          <li class="block">
+            <a
+              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
+              href="#"
+              >Company</a
+            >
+          </li>
+          <li class="block align-baseline"></li>
+          <li class="block">
+            <a
+              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
+              href="#"
+              >Properties</a
+            >
+          </li>
+          <li class="block align-baseline"></li>
+          <li class="block">
+            <a
+              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
+              href="./founder.html"
+              >Founder</a
+            >
+          </li>
+          <li class="block align-baseline"></li>
+          <li class="block">
+            <a
+              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
+              href="./contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section
+        id="mobile-menu"
+        class="toggle-btn absolute left-0 top-[83px] mx-0 hidden w-full max-w-full flex-col justify-center bg-background-light text-3xl"
+      >
+        <nav
+          class="relative flex min-h-7 w-full flex-col py-5"
+          aria-label="mobile"
+        >
+          <ul class="flex flex-col justify-center gap-5 px-8 text-text-dark">
+            <li>
+              <a href="index.html" class="block rounded-md pl-2 hover:bg-hover"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="block rounded-md pl-2 hover:bg-hover" href="#"
+                >Company</a
+              >
+            </li>
+            <li>
+              <a class="block rounded-md pl-2 hover:bg-hover" href="#"
+                >Properties</a
+              >
+            </li>
+            <li>
+              <a
+                class="block rounded-md pl-2 hover:bg-hover"
+                href="/src/founder.html"
+                >Founder</a
+              >
+            </li>
+            <li>
+              <a
+                class="block rounded-md pl-2 hover:bg-hover"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="flex min-h-[calc(100vh-96px-52px)] bg-background-light">
+      <section class="w-full">
+        <div class="mx-auto max-w-6xl px-6 py-8">
+          <h2 class="mb-8 text-center text-4xl font-bold">Development</h2>
+
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Listing 1 -->
+            <div class="overflow-hidden rounded-lg bg-white p-6 shadow-lg">
+              <img
+                src="/img/11b Troutman, Brooklyn ny.PNG"
+                class="h-48 w-full object-cover"
+              />
+              <h2 class="mb-2 text-2xl font-bold">FOR SALE</h2>
+              <p class="text-gray-600">POCKET LISTING</p>
+              <p class="text-gray-600">PRICE UPON REQUEST</p>
+              <p class="text-gray-600">SIXTH&BLANCO, AUSTIN, TX 78703</p>
+              <p class="text-gray-600">6 BEDS | 6 BATHS | 2409 SQFT</p>
+            </div>
+
+            <!-- Listing 2 -->
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h2 class="mb-2 text-2xl font-bold">FOR SALE</h2>
+              <p class="text-gray-600">4904 TORTUGA PLACE, AUSTIN, TX 78731</p>
+              <p class="text-gray-600">6 BEDS | 6.5 BATHS | 2409 SQFT</p>
+              <p class="text-gray-600">$17,500,000</p>
+            </div>
+
+            <!-- Listing 3 -->
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h2 class="mb-2 text-2xl font-bold">FOR SALE</h2>
+              <p class="text-gray-600">1208 ROCKCLIFF, AUSTIN, TX 78746</p>
+              <p class="text-gray-600">5 BEDS | 5 BATHS | 2309 SQFT</p>
+              <p class="text-gray-600">$14,950,000</p>
+            </div>
+
+            <!-- Listing 4 -->
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h2 class="mb-2 text-2xl font-bold">FOR SALE</h2>
+              <p class="text-gray-600">
+                1508 WILDCAT HOLLOW, WEST LAKE HILLS, TX 78746
+              </p>
+              <p class="text-gray-600">6 BEDS | 10 BATHS | 8409 SQFT</p>
+              <p class="text-gray-600">PRICE UPON REQUEST</p>
+            </div>
+
+            <!-- Listing 5 -->
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h2 class="mb-2 text-2xl font-bold">FOR SALE</h2>
+              <p class="text-gray-600">8848 BIG VIEW DRIVE, AUSTIN, TX 78730</p>
+              <p class="text-gray-600">3 BEDS | 4 BATHS | 1450 SQFT</p>
+              <p class="text-gray-600">PRICE UPON REQUEST</p>
+            </div>
+
+            <!-- Listing 6 -->
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <h2 class="mb-2 text-2xl font-bold">FOR SALE</h2>
+              <p class="text-gray-600">
+                201 TERRACE MOUNTAIN DRIVE, WEST LAKE HILLS, TX 78746
+              </p>
+              <p class="text-gray-600">PRICE UPON REQUEST</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="mt-auto flex min-h-16 w-full flex-col items-center justify-center bg-footerC"
+    >
+      <div class="mx-auto flex w-full max-w-6xl items-center">
+        <section class="mt-0 pl-4 md:pl-0">
+          <p>&#169; 2024 maximaproperties</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

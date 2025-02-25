@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         head: ["Bodoni Moda", "serif"],
-        body: ["Montserrat", "serif"],
+        body: ["Montserrat", "sans-serif"],
       },
 
       colors: {
