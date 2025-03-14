@@ -14,12 +14,14 @@
     <script src="/scripts/main.js" defer></script>
   </head>
 
-  <body class="mx-auto flex min-h-full min-w-max flex-col bg-background-light">
+  <body class="mx-auto flex min-h-full w-screen flex-col overflow-x-hidden bg-background-light">
     <header
       class="sticky top-0 z-50 mx-auto w-full border-b-4 border-borderG bg-background-light font-body font-medium shadow-md"
     >
       <nav class="mx-auto flex max-w-6xl items-center justify-between p-4">
-        <img src="/img/SalamonLogo.png" alt="company logo" class="h-12" />
+        <a href="index.html"
+          ><img src="/img/SalamonLogo.png" alt="company logo" class="h-12"
+        /></a>
 
         <button
           id="hamburger-button"
@@ -31,11 +33,11 @@
         </button>
 
         <ul
-          class="mx-0 hidden list-none flex-row content-center justify-center align-baseline md:flex md:text-xl lg:text-2xl"
+          class="mx-0 hidden list-none flex-row content-center justify-center align-baseline md:flex md:text-xl lg:text-base lg:leading-8"
         >
           <li class="block align-baseline">
             <a
-              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
+              class="rounded-md px-[20px] py-[1.9rem] transition duration-500 hover:bg-[#DBDCE1]"
               href="index.html"
               >Home</a
             >
@@ -43,15 +45,7 @@
           <li class="block align-baseline"></li>
           <li class="block">
             <a
-              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
-              href="#"
-              >Company</a
-            >
-          </li>
-          <li class="block align-baseline"></li>
-          <li class="block">
-            <a
-              class="rounded-md px-[20px] py-[26px] underline decoration-[#70ABCF] decoration-[3.4px] underline-offset-8 transition duration-500 hover:bg-[#DBDCE1]"
+              class="rounded-md px-[20px] py-[1.9rem] underline decoration-[#70ABCF] decoration-[3.4px] underline-offset-8 transition duration-500 hover:bg-[#DBDCE1]"
               href="./Properties.html"
               >Properties</a
             >
@@ -59,7 +53,7 @@
           <li class="block align-baseline"></li>
           <li class="block">
             <a
-              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
+              class="rounded-md px-[20px] py-[1.9rem] transition duration-500 hover:bg-[#DBDCE1]"
               href="./founder.html"
               >Founder</a
             >
@@ -67,7 +61,7 @@
           <li class="block align-baseline"></li>
           <li class="block">
             <a
-              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
+              class="rounded-md px-[20px] py-[1.9rem] transition duration-500 hover:bg-[#DBDCE1]"
               href="./contact.html"
               >Contact</a
             >
@@ -87,11 +81,6 @@
             <li>
               <a href="index.html" class="block rounded-md pl-2 hover:bg-hover"
                 >Home</a
-              >
-            </li>
-            <li>
-              <a class="block rounded-md pl-2 hover:bg-hover" href="#"
-                >Company</a
               >
             </li>
             <li>
@@ -120,9 +109,17 @@
       </section>
     </header>
 
-    <main class="flex min-h-[calc(100vh-96px-52px)] bg-background-light">
+    <main class="flex min-h-screen bg-background-light">
       <section class="w-full">
-        <div class="mx-auto max-w-6xl px-6 py-8">
+        <div class="mx-auto flex max-w-6xl flex-col px-6 py-8">
+          <div
+            class="mb-8 flex max-w-screen flex-col text-2xl font-medium text-center"
+          >
+            Strategic acquisitions. Expert renovations. Maximum returns.<d>
+            Discover our proven track record of turning undervalued properties
+            into high-performing assets across both commercial and residential
+            markets.
+          </div>
           <h2 class="mb-8 text-center text-4xl font-bold">Development</h2>
 
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

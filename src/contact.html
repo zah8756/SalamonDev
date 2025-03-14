@@ -18,7 +18,9 @@
       class="sticky top-0 z-50 mx-auto w-full border-b-4 border-borderG bg-background-light font-body font-medium shadow-md"
     >
       <nav class="mx-auto flex max-w-6xl items-center justify-between p-4">
-        <img src="/img/SalamonLogo.png" alt="company logo" class="h-12" />
+        <a href="index.html"
+          ><img src="/img/SalamonLogo.png" alt="company logo" class="h-12"
+        /></a>
 
         <button
           id="hamburger-button"
@@ -30,21 +32,13 @@
         </button>
 
         <ul
-          class="mx-0 hidden list-none flex-row content-center justify-center align-baseline md:flex md:text-xl lg:text-2xl"
+          class="mx-0 hidden list-none flex-row content-center justify-center align-baseline md:flex md:text-xl lg:text-base lg:leading-8"
         >
           <li class="block align-baseline">
             <a
               class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
               href="index.html"
               >Home</a
-            >
-          </li>
-          <li class="block align-baseline"></li>
-          <li class="block">
-            <a
-              class="rounded-md px-[20px] py-[26px] transition duration-500 hover:bg-[#DBDCE1]"
-              href="#"
-              >Company</a
             >
           </li>
           <li class="block align-baseline"></li>
@@ -96,12 +90,16 @@
     <main
       class="flex min-h-[calc(100vh-96px-52px)] justify-center bg-background-light"
     >
-      <div class="flex w-full max-w-5xl flex-col gap-6 p-10">
-        <h2>Contact Us</h2>
+      <div class="flex w-full max-w-3xl flex-col gap-6 p-10">
+        <h2 class="text-2xl font-bold">Contact Us</h2>
+        <h3 class="text-1xl mb-2 font-semibold">
+          Interested in collaborating with Salamon Acquisitions? We’d like to
+          hear from you.
+        </h3>
         <form
           action="send_email.php"
           method="post"
-          class="flex flex-col gap-2 rounded-md border bg-gray-50 p-8"
+          class="flex max-w-3xl flex-col gap-2 rounded-md border bg-gray-50 p-8"
         >
           <label for="name">Your Name:</label>
           <input
